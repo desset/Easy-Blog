@@ -26,4 +26,5 @@
 (6)编辑文章  
 ![1](https://github.com/desset/Easy-Blog/blob/master/jietu/8.PNG)  
 其他功能:  
-模糊搜索，退出登录等。  
+模糊搜索，退出登录等。
+博客地址http://49.235.1.136/easy-blog
