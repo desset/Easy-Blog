@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 配置全局属性 -->
+    <settings>
+        <!-- 使用jdbc的getGeneratedKeys获取数据库自增主键值 -->
+        <setting name="useGeneratedKeys" value="true" />
+        <!-- 使用列别名替换列名 默认:true -->
+        <setting name="useColumnLabel" value="true" />
+        <!-- 开启驼峰命名转换:Table{create_time} -> Entity{createTime} -->
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+    </settings>
+    <plugins>
+        <!-- com.github.pagehelper为PageHelper类所在包名 -->
+        <!-- maven中引入的包 -->
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!-- 使用下面的方式配置参数，后面会有所有的参数介绍 -->
+            <property name="helperDialect" value="mysql"/>
+        </plugin>
+    </plugins>
+<!--     <environments default="development">
+         <environment id="development">
+             <transactionManager type="JDBC" />
+             配置数据库连接信息
+             <dataSource type="POOLED">
+                 value属性值引用db.properties配置文件中配置的值
+                 <property name="driver" value="com.mysql.jdbc.Driver" />
+                 <property name="url" value="jdbc:mysql://localhost:3306/easy-blog?useUnicode=true&amp;characterEncoding=UTF-8" />
+                 <property name="username" value="root" />
+                 <property name="password" value="123456" />
+             </dataSource>
+         </environment>
+     </environments> -->
+</configuration>
