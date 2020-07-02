@@ -27,4 +27,4 @@
 ![1](https://github.com/desset/Easy-Blog/blob/master/jietu/8.PNG)  
 其他功能:  
 模糊搜索，退出登录等。
-博客地址http://49.235.1.136/easy-blog(为避免浏览器兼容问题，请使用谷歌浏览器访问)
+博客地址http://49.235.1.136/easy-blog (为避免浏览器兼容问题，请使用谷歌浏览器访问)
